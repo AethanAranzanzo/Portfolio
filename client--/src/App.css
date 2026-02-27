@@ -1,0 +1,87 @@
+@tailwind components;
+
+@layer components {
+  .section {
+    min-height: 100vh;
+    padding: 5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #60a5fa, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card {
+    background-color: #141414;
+    border: 1px solid #1f2937;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    border-color: #3b82f6;
+  }
+
+  .btn-primary {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .btn-primary:hover {
+    background-color: #2563eb;
+  }
+
+  .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .btn-outline {
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    white-space: nowrap;
+  }
+
+  .btn-outline:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  /* Utility classes */
+  .bg-primary { background-color: #0a0a0a; }
+  .bg-secondary { background-color: #141414; }
+  .bg-tertiary { background-color: #1a1a1a; }
+  .text-accent { color: #3b82f6; }
+  .bg-accent { background-color: #3b82f6; }
+  .bg-accent-hover { background-color: #2563eb; }
+}

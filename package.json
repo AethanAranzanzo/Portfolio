@@ -1,0 +1,25 @@
+{
+  "name": "aethan-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev:api & npm run dev:client",
+    "dev:api": "node server.js",
+    "dev:client": "cd client-- && npm run dev",
+    "build": "cd client-- && npm run build",
+    "preview": "cd client-- && npm run preview"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
