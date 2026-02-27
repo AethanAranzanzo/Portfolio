@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import dotenv from 'dotenv';
 
-dotenv.config({ path: 'client--/.env' });
+dotenv.config({ path: '.env' }); 
 
 const app = express();
 const PORT = 3000;
