@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const genAI = new GoogleGenerativeAI(process.env.VITE_GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API);
 
 const resumeContext = `
 You are an AI assistant for Aethan Ynnos Cruz Aranzanzo's portfolio website. Here is his professional information:

@@ -13,10 +13,10 @@ app.use(cors());
 app.use(express.json());
 
 console.log('Environment check:');
-console.log('GEMINI_API_KEY exists:', !!process.env.VITE_GEMINI_API_KEY);
-console.log('EMAIL_USER exists:', !!process.env.VITE_EMAIL_USER);
+console.log('GEMINI_API exists:', !!process.env.GEMINI_API);  
+console.log('EMAIL_USER exists:', !!process.env.EMAIL_USER);
 
-const genAI = new GoogleGenerativeAI(process.env.VITE_GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API);  
 
 const resumeContext = `
 You are an AI assistant for Aethan Ynnos Cruz Aranzanzo's portfolio website. Here is his professional information:
@@ -124,14 +124,14 @@ app.post('/api/contact', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.VITE_EMAIL_USER,
+        user: process.env.EMAIL_USER,
         pass: process.env.VITE_EMAIL_PASS,
       },
     });
 
     const mailOptions = {
-      from: process.env.VITE_EMAIL_USER,
-      to: process.env.VITE_EMAIL_USER,
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
       subject: `Portfolio Contact: ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>

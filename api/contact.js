@@ -26,19 +26,18 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Create transporter
+    // Use server-side environment variables (without VITE_ prefix)
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.VITE_EMAIL_USER,
-        pass: process.env.VITE_EMAIL_PASS,
+        user: process.env.EMAIL_USER,  // Changed from VITE_EMAIL_USER
+        pass: process.env.EMAIL_PASS,  // Changed from VITE_EMAIL_PASS
       },
     });
 
-    // Email options
     const mailOptions = {
-      from: process.env.VITE_EMAIL_USER,
-      to: process.env.VITE_EMAIL_USER,
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
       subject: `Portfolio Contact: ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -50,9 +49,7 @@ export default async function handler(req, res) {
       replyTo: email,
     };
 
-    // Send email
     await transporter.sendMail(mailOptions);
-
     return res.status(200).json({ message: 'Email sent successfully' });
   } catch (error) {
     console.error('Error sending email:', error);
