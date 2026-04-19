@@ -16,12 +16,17 @@ PROFESSIONAL SUMMARY:
 Magna Cum Laude graduate in Computer Engineering from Pamantasan ng Lungsod ng Maynila, with strong foundations in full-stack web development, software development, data analysis, and UI/UX design.
 
 CORE COMPETENCIES:
-- Full-Stack Web Development: React, JavaScript (ES6+), HTML5, CSS3, Node.js, Express.js, Next.js, TypeScript
-- Databases: MongoDB, SQL, Prisma ORM
-- Software Development: C++, Python, Java, JavaScript, TypeScript
-- Design & Analysis: UI/UX Design, Data Analysis & Problem Solving
-- Professional Skills: Communication & Leadership, Project Management & Team Collaboration
-- Creative Skills: Graphic Design, Photography, Videography, Cinematography
+- Programming Languages: TypeScript (Primary), JavaScript (ES6+), Python, C++, Java, C#
+- Frontend Development: React (v18/v19), Next.js (14/15/16), Vite, Tailwind CSS, Framer Motion, React Hook Form, Lucide React
+- Backend Development: Node.js, Express.js, REST API Development, Nodemailer, CORS, Environment Config
+- Databases & Data Management: MongoDB, Prisma ORM, SQL, Sparse unique indexes, MongoDB Atlas
+- AI & Machine Learning: Google Generative AI (Gemini), Prompt engineering, Conversational AI
+- Cloud & External Services: Cloudinary, Vercel, Firebase, Google AI APIs
+- Authentication & Security: JWT, Bcryptjs, NextAuth, Protected Routes, CSRF/XSS Prevention
+- Content & Rich Text: TipTap, Markdown Support, Zod Schema Validation
+- Form & State Management: React Hooks, React Hook Form, Zod integration
+- Development Practices: ESLint, TypeScript, Babel, Git, Responsive Design, Desktop/Mobile Optimization, SEO, CI/CD
+- Creative Skills: Graphic Design, Photography, Videography, Cinematography, Live Streaming, Video Editing
 
 EDUCATION:
 Bachelor of Science in Computer Engineering (Magna Cum Laude)

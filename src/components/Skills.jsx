@@ -6,7 +6,8 @@ import {
 } from 'react-icons/fa'
 import { 
   SiExpress, SiMongodb, SiMysql, SiTailwindcss, 
-  SiCplusplus, SiFirebase 
+  SiCplusplus, SiFirebase, SiTypescript, SiNextdotjs,
+  SiPrisma, SiZod, SiVercel, SiVite
 } from 'react-icons/si'
 import { TbBrandCSharp } from 'react-icons/tb'
 
@@ -20,11 +21,11 @@ const Skills = () => {
     {
       title: 'Frontend',
       skills: [
-        { name: 'React', icon: <FaReact className="text-4xl text-[#61DAFB]" /> },
+        { name: 'React (v18/19)', icon: <FaReact className="text-4xl text-[#61DAFB]" /> },
+        { name: 'Next.js', icon: <SiNextdotjs className="text-4xl text-white" /> },
+        { name: 'TypeScript', icon: <SiTypescript className="text-4xl text-[#3178C6]" /> },
         { name: 'JavaScript', icon: <FaJs className="text-4xl text-[#F7DF1E]" /> },
-        { name: 'HTML5', icon: <FaHtml5 className="text-4xl text-[#E34F26]" /> },
-        { name: 'CSS3', icon: <FaCss3Alt className="text-4xl text-[#1572B6]" /> },
-        { name: 'Tailwind', icon: <SiTailwindcss className="text-4xl text-[#06B6D4]" /> },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-4xl text-[#06B6D4]" /> },
       ],
     },
     {
@@ -33,15 +34,16 @@ const Skills = () => {
         { name: 'Node.js', icon: <FaNodeJs className="text-4xl text-[#339933]" /> },
         { name: 'Express.js', icon: <SiExpress className="text-4xl" /> },
         { name: 'MongoDB', icon: <SiMongodb className="text-4xl text-[#47A248]" /> },
-        { name: 'SQL', icon: <SiMysql className="text-4xl text-[#4479A1]" /> },
+        { name: 'Prisma ORM', icon: <SiPrisma className="text-4xl text-white" /> },
         { name: 'Firebase', icon: <SiFirebase className="text-4xl text-[#FFCA28]" /> },
       ],
     },
     {
       title: 'Programming Languages',
       skills: [
-        { name: 'C++', icon: <SiCplusplus className="text-4xl text-[#00599C]" /> },
+        { name: 'TypeScript', icon: <SiTypescript className="text-4xl text-[#3178C6]" /> },
         { name: 'Python', icon: <FaPython className="text-4xl text-[#3776AB]" /> },
+        { name: 'C++', icon: <SiCplusplus className="text-4xl text-[#00599C]" /> },
         { name: 'Java', icon: <FaJava className="text-4xl text-[#007396]" /> },
         { name: 'C#', icon: <TbBrandCSharp className="text-4xl text-[#239120]" /> },
       ],
@@ -50,6 +52,9 @@ const Skills = () => {
       title: 'Tools & Others',
       skills: [
         { name: 'Git', icon: <FaGitAlt className="text-4xl text-[#F05032]" /> },
+        { name: 'Zod Validator', icon: <SiZod className="text-4xl text-[#3068b7]" /> },
+        { name: 'Vite', icon: <SiVite className="text-4xl text-[#646CFF]" /> },
+        { name: 'Vercel', icon: <SiVercel className="text-4xl text-white" /> },
         { name: 'Unity3D', icon: <FaUnity className="text-4xl" /> },
       ],
     },
