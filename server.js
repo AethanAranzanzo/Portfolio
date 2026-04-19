@@ -89,7 +89,8 @@ KEY PROJECTS:
      * Security: CSRF, XSS protection, input sanitization
      * Performance: Server-side pagination, MongoDB optimization
 
-2. Dynamic Church Website & Information Hub (MERN Stack)
+2. St. Joseph Parish Gagalangin – Official Website
+   - Live at: https://stjosephparishwebsite.vercel.app/
    - Full-stack website with RESTful API using Node.js and Express.js
    - Integrated Gemini-powered AI Chatbot for 24/7 assistance
    - MongoDB for dynamic content management
@@ -203,3 +204,12 @@ app.post('/api/chat', async (req, res) => {
         console.error('❌ All models failed');
         return res.status(500).json({ 
           message: 'AI chatbot is temporarily unavailable. Please try again in a few minutes.',
+        });
+      }
+    }
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});

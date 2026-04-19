@@ -26,7 +26,7 @@ const Projects = () => {
       demo: 'https://blogspace-rho.vercel.app/',
     },
     {
-      title: 'Dynamic Church Website & Information Hub',
+      title: 'St. Joseph Parish Gagalangin – Official Website',
       description: 'Official website for St. Joseph Parish Gagalangin. A full-stack application providing Mass schedules, sacrament guidelines, daily readings, events, a podcast directory, and an interactive AI chatbot.',
       technologies: ['Next.js 15+', 'React 19', 'TypeScript', 'Tailwind CSS v4', 'MongoDB', 'Cloudinary', 'Nodemailer', 'Gemini AI'],
       features: [
@@ -38,7 +38,7 @@ const Projects = () => {
       ],
       image: '/church-screenshot.png',
       github: '#',
-      demo: '#',
+      demo: 'https://stjosephparishwebsite.vercel.app/',
     },
     {
       title: 'ARise: AR Glasses Training',
